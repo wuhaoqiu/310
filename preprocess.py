@@ -40,13 +40,6 @@ def pureQuestionsText(qrDict):
         questions=questions+question+' .\n '
     return questions
 
-def generateCleanWordsTokens(questions):
-    #remove all punctuations from text
-    questionsWithoutPunc=questions.translate(str.maketrans('','',string.punctuation))
-    words=nltk.word_tokenize(questionsWithoutPunc)
-    #remove numbers
-    wordsWithoutNum=[i for i in words if i.isalpha()]
-    return wordsWithoutNum
 
 def generateSentenceTokens(questions):
     import nltk
