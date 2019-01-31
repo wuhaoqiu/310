@@ -26,15 +26,18 @@ def generateConversationTurnDict(inputText):
         #first part is question as key,second part is response as value
         subparts=re.split(r'\s+-',turn)
         if(len(subparts)==2):
-            qrDict[subparts[0].rstrip().lstrip()]=subparts[1].rstrip()
+            sub1=subparts[0].rstrip().lstrip()
+            sub1=sub1.translate(str.maketrans('','',string.punctuation))
+            qrDict[sub1]=subparts[1].rstrip()
     return qrDict
 
 def pureQuestionsText(qrDict):
     questions=""
     #extract questions and combine them into one text
     for question,response in qrDict.items():
+        question=question.replace("you","")
         question=question.replace("the","")
-        questions=questions+question+'.\n'
+        questions=questions+question+' .\n '
     return questions
 
 def generateCleanWordsTokens(questions):
