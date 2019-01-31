@@ -1,9 +1,12 @@
 # 310 ChatBot
 
-### Team Member: Yue Cao, ALex Qin, Yuqi Sun, Haoqiu Wu, Michael Wu
+### Team Member: 
 
+Yue Cao, ALex Qin, Yuqi Sun, Haoqiu Wu, Michael Wu
 
-### Introduction: This is a simple chatbot program. The most fundamental theory that this program relies on is text similarity. 
+### Introduction: 
+
+This is a simple chatbot program. The most fundamental theory that this program relies on is text similarity. 
 
 The following steps decribe the logic of this program:
 * Clean text, including remove punctuation, duplicate whitespace.
