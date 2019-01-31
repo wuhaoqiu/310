@@ -1,9 +1,9 @@
 # 310 ChatBot
 
-###Team Member: Yue Cao, ALex Qin, Yuqi Sun, Haoqiu Wu, Michael Wu
+### Team Member: Yue Cao, ALex Qin, Yuqi Sun, Haoqiu Wu, Michael Wu
 
 
-###Introduction: This is a simple chatbot program. The most fundamental theory that this program relies on is text similarity. 
+### Introduction: This is a simple chatbot program. The most fundamental theory that this program relies on is text similarity. 
 
 The following steps decribe the logic of this program:
 * Clean text, including remove punctuation, duplicate whitespace.
@@ -16,10 +16,10 @@ The following steps decribe the logic of this program:
 
 The training corpus used in our project comes from this [Repo](https://github.com/gunthercox/chatterbot-corpus)
 
-###How to use this program:
+### How to use this program:
 * Fork it.
 * Make sure training corpus and the program are in the same folder
-* Run from command line 'python main.py'
+* Run from command line `python main.py`
 
 
 
