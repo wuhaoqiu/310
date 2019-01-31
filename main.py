@@ -7,7 +7,7 @@ https://github.com/gunthercox/chatterbot-corpus
 
 @author: whq672437089
 """
-import measuerSimilarity as ms
+import generateResponse as gr
 import preprocess as pp
 content=""
 with open("corpus.txt") as infile:
@@ -31,7 +31,7 @@ while(flag==True):
             flag=False
             print("ROBO: You are welcome..")
         else:
-            print("ROBO: "+ms.generateResponse(userInput,sentenceTokens,qrDict,ql))
+            print("ROBO: "+gr.generateResponse(userInput,sentenceTokens,qrDict,ql))
             sentenceTokens.remove(userInput)
     else:
         flag=False
