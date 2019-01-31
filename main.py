@@ -15,7 +15,6 @@ with open("corpus.txt") as infile:
         content=content+" "+line.lower()
 qrDict=pp.generateConversationTurnDict(content)
 pureQuestions=pp.pureQuestionsText(qrDict)
-wordTokens=pp.generateCleanWordsTokens(pureQuestions)
 sentenceTokens=pp.generateSentenceTokens(pureQuestions)
 ql=[]
 for question,response in qrDict.items():
