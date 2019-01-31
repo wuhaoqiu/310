@@ -33,6 +33,7 @@ def pureQuestionsText(qrDict):
     questions=""
     #extract questions and combine them into one text
     for question,response in qrDict.items():
+        question=question.replace("the","")
         questions=questions+question+'.\n'
     return questions
 

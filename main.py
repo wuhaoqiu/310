@@ -12,7 +12,7 @@ import preprocess as pp
 content=""
 with open("corpus.txt") as infile:
     for line in infile:
-        content=content+" "+line
+        content=content+" "+line.lower()
 qrDict=pp.generateConversationTurnDict(content)
 pureQuestions=pp.pureQuestionsText(qrDict)
 wordTokens=pp.generateCleanWordsTokens(pureQuestions)
