@@ -27,7 +27,6 @@ def generateConversationTurnDict(inputText):
         subparts=re.split(r'\s+-',turn)
         if(len(subparts)==2):
             sub1=subparts[0].rstrip().lstrip()
-            sub1=sub1.translate(str.maketrans('','',string.punctuation))
             qrDict[sub1]=subparts[1].rstrip()
     return qrDict
 
@@ -35,8 +34,7 @@ def pureQuestionsText(qrDict):
     questions=""
     #extract questions and combine them into one text
     for question,response in qrDict.items():
-        question=question.replace("you","")
-        question=question.replace("the","")
+        question=sanitize_questions(question)
         questions=questions+question+' .\n '
     return questions
 
@@ -45,6 +43,10 @@ def generateSentenceTokens(questions):
     import nltk
     sentences=nltk.sent_tokenize(questions)
     return sentences
+
+def sanitize_questions(question):
+    sanitized_question = question.translate(str.maketrans('', '', string.punctuation)).replace("you", "").replace("the", "").rstrip().lstrip()
+    return sanitized_question
 
 
 

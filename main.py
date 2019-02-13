@@ -24,7 +24,7 @@ flag=True
 print("ROBO: Hello, I am a chatbot. Type Bye to exit")
 while(flag==True):
     userInput = input()
-    userInput=userInput.lower()
+    userInput=pp.sanitize_questions(userInput.lower())
     if(userInput!='bye'):
         if(userInput=='thanks' or userInput=='thank you' ):
             flag=False

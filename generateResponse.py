@@ -14,7 +14,7 @@ def lemTokens(tokens):
     lemmatizer=WordNetLemmatizer()
     return [lemmatizer.lemmatize(token) for token in tokens]
 
-def generateResponse(userInput,sentences,askResponseDict,ql,similarityThredhold=0.5):
+def generateResponse(userInput,sentences,askResponseDict,ql,similarityThredhold=0.7):
     #prevent bad input
     if ((similarityThredhold>1) or (similarityThredhold<0)):
         similarityThredhold=0.5
