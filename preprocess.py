@@ -45,7 +45,7 @@ def generateSentenceTokens(questions):
     return sentences
 
 def sanitize_questions(question):
-    sanitized_question = question.translate(str.maketrans('', '', string.punctuation)).replace("you", "").replace("the", "").rstrip().lstrip()
+    sanitized_question = question.translate(str.maketrans('', '', string.punctuation)).rstrip().lstrip()
     return sanitized_question
 
 

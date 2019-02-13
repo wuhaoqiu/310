@@ -14,8 +14,17 @@ with open("corpus.txt") as infile:
     for line in infile:
         content=content+" "+line.lower()
 qrDict=pp.generateConversationTurnDict(content)
+index=0
+for question,answer in qrDict.items():
+    print("question is:"+question+', answer is'+answer+', index is:'+str(index))
+    index+=1
+    
 pureQuestions=pp.pureQuestionsText(qrDict)
 sentenceTokens=pp.generateSentenceTokens(pureQuestions)
+index2=0
+for question in sentenceTokens:
+    print("index is:"+str(index2)+", question is:"+question)
+    index2+=1
 ql=[]
 for question,response in qrDict.items():
     ql.append(question)
