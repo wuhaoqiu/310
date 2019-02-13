@@ -12,7 +12,7 @@ class testPreprocess(unittest.TestCase):
     def setUp(self):
         self.content="- - what is the illuminati \n - secret - - what is vineland \n - novel"
         self.template={"what is the illuminati":" secret","what is vineland":" novel"}
-        self.question="what is  illuminati .\n what is vineland .\n "
+        self.question="what is the illuminati .\n what is vineland .\n "
     
     def tearDown(self):
         del self.content
