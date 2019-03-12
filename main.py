@@ -47,13 +47,27 @@ def pureQuestionsText(qrDict):
 
 
 def generateSentenceTokens(questions):
-    import nltk
     sentences=nltk.sent_tokenize(questions)
     return sentences
 
 def sanitize_questions(question):
     sanitized_question = question.translate(str.maketrans('', '', string.punctuation)).rstrip().lstrip()
     return sanitized_question
+
+
+content=""
+with open("corpus.txt") as infile:
+    for line in infile:
+        content=content+" "+line.lower()
+        
+qrDict=generateConversationTurnDict(content)
+    
+pureQuestions=pureQuestionsText(qrDict)
+sentenceTokens=generateSentenceTokens(pureQuestions)
+
+ql=[]
+for question,response in qrDict.items():
+    ql.append(question)
 
 
 """
@@ -91,19 +105,7 @@ def generateResponse(userInput,sentences,askResponseDict,ql,similarityThredhold=
     
 
 
-content=""
-with open("corpus.txt") as infile:
-    for line in infile:
-        content=content+" "+line.lower()
-        
-qrDict=generateConversationTurnDict(content)
-    
-pureQuestions=pureQuestionsText(qrDict)
-sentenceTokens=generateSentenceTokens(pureQuestions)
 
-ql=[]
-for question,response in qrDict.items():
-    ql.append(question)
 
 flag=True
 print("ROBO: Hello, I am a chatbot. Type Bye to exit")
