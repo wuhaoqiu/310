@@ -22,5 +22,4 @@ def chat(request):
 
 
 def chatbot_page(request):
-
     return render(request,'mlmodels/chatbot/chatbot.html')

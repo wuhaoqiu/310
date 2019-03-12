@@ -29,13 +29,14 @@ The training corpus used in our project comes from this [Repo](https://github.co
 
 *Make use of other existing language tookit including sklearn library and nltk toolkit
 
-*Make this chatbot into production by deploying it on the django server with the ajax communication technique.
+*Make this chatbot into production by deploying it on the django server with the ajax communication technique.[AJAX](),[Django.view](),[Django.template]()
 ### How to use this program:
 * Fork it.
 * Create virtule environment and then install all dependecies in requirements.txt
-* Move the folder where manage.py exists
+* Move into the folder where manage.py exists
 * Run from command line `python manage.py runserver`
-* Visit 127.0.0.1:8000/mlmodels/chatbot_page/ in your browser.
+* Visit [localhost](127.0.0.1:8000/mlmodels/chatbot_page/) in your browser.
+* Enjoy chatting
 
 
 
