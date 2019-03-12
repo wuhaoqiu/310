@@ -22,20 +22,26 @@ The training corpus used in our project comes from this [Repo](https://github.co
 ### A3 New Feature Introduction
 
 *Add a GUI where user can input through a text input area and read the recent chat history with chatbot
-![alt text](https://i0.hdslb.com/bfs/article/3fd2f716d5e0f187f25b14bad26d8e793be04ac9.jpg@1320w_858h.webp)
+![alt text](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/screenshots/gui.png)
+*Various response returned when the content users input is beyong the scope of chatbot
+![alt text](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/screenshots/five%20different%20response.png)
 *Add a new topic about arts so that currently user can discuss about article authors with chatbot
+![alt text](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/screenshots/new%20topic.png)
 
 *Current chatbot is able to deal with user misspelling as long as such misspelling is not too confused
+![alt text](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/screenshots/misspelling.png)
 
 *Make use of other existing language tookit including sklearn library and nltk toolkit
+[nltk and sklearn tookit](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/cosc310/mysite/mlmodels/model_chatbot.py)
 
-*Make this chatbot into production by deploying it on the django server with the ajax communication technique.[AJAX](),[Django.view](),[Django.template]()
+*Make this chatbot into production by deploying it on the django server with the ajax communication technique.[AJAX](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/cosc310/mysite/mlmodels/templates/mlmodels/chatbot/chatbot.html),[Django.view](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/cosc310/mysite/mlmodels/views.py)
+
 ### How to use this program:
 * Fork it.
 * Create virtule environment and then install all dependecies in requirements.txt
 * Move into the folder where manage.py exists
 * Run from command line `python manage.py runserver`
-* Visit [localhost](127.0.0.1:8000/mlmodels/chatbot_page/) in your browser.
+* Visit localhost: 127.0.0.1:8000/mlmodels/chatbot_page/ in your browser.
 * Enjoy chatting
 
 
