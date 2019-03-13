@@ -31,6 +31,5 @@ def generateResponse(userInput,sentences,askResponseDict,ql,similarityThredhold=
         return robotResponse
     else:
         question=ql[idx]
-        print("matched question from database: "+question)
         robotResponse =''+askResponseDict.get(question)
         return robotResponse
