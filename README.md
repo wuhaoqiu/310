@@ -21,26 +21,26 @@ The training corpus used in our project comes from this [Repo](https://github.co
 
 ### A3 New Feature Introduction
 
-*Add a GUI where user can input through a text input area and read the recent chat history with chatbot
+* Add a GUI where user can input through a text input area and read the recent chat history with chatbot
 
 ![alt text](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/screenshots/gui.png)
 
-*Various response returned when the content users input is beyong the scope of chatbot
+* Various response returned when the content users input is beyong the scope of chatbot
 
 ![alt text](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/screenshots/five%20different%20response.png)
 
-*Add a new topic about arts so that currently user can discuss about article authors with chatbot
+* Add a new topic about arts so that currently user can discuss about article authors with chatbot
 
 ![alt text](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/screenshots/new%20topic.png)
 
-*Current chatbot is able to deal with user misspelling as long as such misspelling is not too confused
+* Current chatbot is able to deal with user misspelling as long as such misspelling is not too confused
 
 ![alt text](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/screenshots/misspelling.png)
 
-*Make use of other existing language tookit including sklearn library and nltk toolkit, which helps the system to deal with misspleeing input from users by WordNetLemmatizer in nltk toolkit
+* Make use of other existing language tookit including sklearn library and nltk toolkit, which helps the system to deal with misspleeing input from users by WordNetLemmatizer in nltk toolkit
 [nltk and sklearn tookit](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/cosc310/mysite/mlmodels/model_chatbot.py)
 
-*Deploy this chatbot into production by using django to build the server, using the Boostrap, BotUI(a kind of Vue.js librays) to build frontend, and using ajax technique to realize the communication between frontend and backend.[AJAX and Vue.js](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/cosc310/mysite/mlmodels/templates/mlmodels/chatbot/chatbot.html),[Django.view](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/cosc310/mysite/mlmodels/views.py)
+* Deploy this chatbot into production by using django to build the server, using the Boostrap, BotUI(a kind of Vue.js librays) to build frontend, and using ajax technique to realize the communication between frontend and backend.[AJAX and Vue.js](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/cosc310/mysite/mlmodels/templates/mlmodels/chatbot/chatbot.html),[Django.view](https://github.com/wuhaoqiu/simple-chatbot/blob/haoqiuwu/cosc310/mysite/mlmodels/views.py)
 
 ### How to use this program:
 * Fork it.
