@@ -39,7 +39,6 @@
                             }
                         }).then(function(res) {
                             var response = NaN;
-
                             //                            AJAX**********************
                             $.post('{% url "mlmodels:chat" %}', {
                                     input: res.value
